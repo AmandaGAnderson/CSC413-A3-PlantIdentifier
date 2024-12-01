@@ -1,0 +1,68 @@
+
+
+newmtl default_Mat
+illum 2
+Kd 0.800000 0.800000 0.800000
+
+newmtl FL48lef2
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd FL48lef2.tif
+map_d FL48lef2.tif
+
+newmtl FL48brn3
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd FL48brn3.tif
+bump FL48brn3.tif
+
+newmtl FL48lef1
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd FL48lef1.tif
+map_d FL48lef1.tif
+
+newmtl FL48brn2
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd FL48brn2.tif
+bump FL48brn2.tif
+
+newmtl FL48brn4
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd FL48brn4.tif
+bump FL48brn4.tif
+
+newmtl FL48pet5
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd FL48pet5.tif
+map_d FL48pet5.tif
+
+newmtl FL48pet4
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd FL48pet4.tif
+map_d FL48pet4.tif
+
+newmtl FL48pet3
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd FL48pet3.tif
+map_d FL48pet3.tif
+
+newmtl FL48brn1
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd FL48brn1.tif
+bump FL48brn1.tif
