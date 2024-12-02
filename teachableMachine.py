@@ -14,11 +14,11 @@ input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
 # Setup Serial Communication
-arduino = serial.Serial('/dev/tty.usbmodem14101', 9600)  # Updated with your macOS Arduino port
+arduino = serial.Serial('COM9', 9600)  # Update with Port (Windows/Mac different formats)
 time.sleep(2)  # Allow time for Arduino to initialize
 
 # Setup Webcam
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)  # Update with Format (Windows/Mac different formats)
 
 while True:
     ret, frame = cap.read()
@@ -44,22 +44,27 @@ while True:
             print("Hydrangea")
             arduino.write(b"Hydrangea\n")
             os.startfile("3D-models\\Hydrangea_sp_Hortensia_OBJ\\FL48_1.obj")
+            time.sleep(10)
         elif predicted_class == 1:
             print("Strelizia Reginae")
             arduino.write(b"Strelizia Reginae\n")
             os.startfile("3D-models\\Strelitzia_OBJ\\strelitzia_1.obj")
+            time.sleep(10)
         elif predicted_class == 2:
             print("Sunflower")
             arduino.write(b"Sunflower\n")
             os.startfile("3D-models\\Sunflower.glb")
+            time.sleep(10)
         elif predicted_class == 3:
             print("Fern")
             arduino.write(b"Fern\n")
             os.startfile("3D-models\\Matteuccia_Struthiopteris_OBJ\\matteucia_struthiopteris_1.obj")
+            time.sleep(10)
         elif predicted_class == 4:
             print("Orchid")
             arduino.write(b"Orchid\n")
             os.startfile("3D-models\\Orchid_Phalaenopsis_OBJ\\orchid.obj")
+            time.sleep(10)
 
     # Display the frame
     cv2.imshow("Webcam", frame)
